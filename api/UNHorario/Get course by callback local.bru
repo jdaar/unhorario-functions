@@ -1,0 +1,35 @@
+meta {
+  name: Get course by callback local
+  type: http
+  seq: 2
+}
+
+post {
+  url: http://127.0.0.1:54321/functions/v1/get-course-by-callback
+  body: json
+  auth: none
+}
+
+headers {
+  Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJzdXBhYmFzZS1kZW1vIiwicm9sZSI6ImFub24iLCJleHAiOjE5ODM4MTI5OTZ9.CRXP1A7WOeoJeXxjNni43kdQwgnWNReilDMblYTn_I0
+  Content-Type: application/json
+}
+
+body:json {
+  {}
+}
+
+body:form-urlencoded {
+  $'pt1: r1%3A0%3Asoc1%3A%200
+  pt1: r1%3A0%3Asoc5%3A
+  pt1: r1%3A0%3Asoc10%3A%200
+  pt1: r1%3A0%3Ait10%3A
+  pt1: r1%3A0%3Ait11%3A
+  org.apache.myfaces.trinidad.faces.FORM: f1
+  Adf-Window-Id: ekouqzzdz
+  javax.faces.ViewState: %5Cu0021-hiidb2i75
+  Adf-Page-Id: 0
+  event: pt1%3Ar1%3A0%3Asoc1
+  event.pt1: r1%3A0%3Asoc1%3A%20%3Cm%20xmlns%3D%22http%3A%2F%2Foracle.com%2FrichClient%2Fcomm%22%3E%3Ck%20v%3D%22autoSubmit%22%3E%3Cb%3E1%3C%2Fb%3E%3C%2Fk%3E%3Ck%20v%3D%22suppressMessageShow%22%3E%3Cs%3Etrue%3C%2Fs%3E%3C%2Fk%3E%3Ck%20v%3D%22type%22%3E%3Cs%3EvalueChange%3C%2Fs%3E%3C%2Fk%3E%3C%2Fm%3E
+  oracle.adf.view.rich.PROCESS: pt1%3Ar1%3A0%3Asoc1'
+}
